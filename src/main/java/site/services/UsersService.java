@@ -33,6 +33,7 @@ public class UsersService {
     }
 
     public List<Users> getUsers() {
+
         return dslContext.selectFrom(Tables.USERS).fetchInto(Users.class);
     }
 
